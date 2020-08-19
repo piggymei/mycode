@@ -1,0 +1,10 @@
+---
+- hosts: planet_express
+                  
+  tasks:
+   - name: "figlet - install figlet"
+     apt:
+       name: figlet
+       state: present
+     become: True
+
