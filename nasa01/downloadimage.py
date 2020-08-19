@@ -14,6 +14,9 @@ dateofpicture = resp["date"]
 titleofpicture = resp["title"]
 descriptionofpicture = ["explanation"]
 pic_url = resp["url"]
-
-wget.download(pic_url, 'dateofpicture.jpg')
+pic_hurl = resp["hdurl"]
+if resolution == "high":
+    wget.download(pic_hurl, 'dateofpicturehigh.jpg')
+else:
+    wget.download(pic_url, 'dateofpicture.jpg')
 
