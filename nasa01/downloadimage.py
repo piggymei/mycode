@@ -17,6 +17,7 @@ pic_url = resp["url"]
 pic_hurl = resp["hdurl"]
 if resolution == "high":
     wget.download(pic_hurl, 'dateofpicturehigh.jpg')
+    wget.download("https://www.chanel.com/images/t_fashionzoom1/f_jpg/classic-handbag-black-velvet-gold-tone-metal-velvet-gold-tone-metal-packshot-default-as1939b0339894305-8826166935582.jpg")
 else:
     wget.download(pic_url, 'dateofpicture.jpg')
 
